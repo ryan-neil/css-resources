@@ -79,7 +79,7 @@ We should get this end result:
   align-items: center;
 }
 ```
-Or:
+OR
 ```css
 .outer-div {
   display: flex;
@@ -98,7 +98,7 @@ Or:
   place-content: center;
 }
 ```
-Or:
+OR
 ```css
 .outer-div {
   display: grid;
@@ -106,7 +106,7 @@ Or:
   justify-content: center;
 }
 ```
-Or:
+OR
 ```css
 .outer-div {
   display: grid;
@@ -131,7 +131,7 @@ Or:
   transform: translate(-50%, -50%);
 }
 ```
-Or:
+OR
 ```css
 .outer-div {
   position: relative;

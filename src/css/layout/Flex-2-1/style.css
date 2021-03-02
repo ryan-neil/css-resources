@@ -1,0 +1,57 @@
+/* 
+==========================
+Colors
+==========================
+*/
+:root {
+	--background-color: #142236;
+	--card-color: #253347;
+}
+body {
+	background-color: var(--background-color);
+}
+
+/* 
+====================================
+2-1 Section Layout
+*/
+
+.section-container {
+	max-width: 70rem;
+	margin: auto;
+	padding: 1rem;
+}
+.section-row-1-wrap {
+	display: flex;
+}
+.section-item__sml {
+	height: 325px;
+	width: 50%;
+	background-color: var(--card-color);
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+.section-item__sml.special {
+	margin-right: 20px;
+}
+.section-item__lrg {
+	height: 325px;
+	width: 100%;
+	background-color: var(--card-color);
+	border-radius: 6px;
+}
+
+/* 
+=================================
+Career Web Responsive Media
+=================================
+*/
+/* All Sizes */
+@media screen and (max-width: 50rem) {
+	.section-row-1-wrap {
+		flex-direction: column;
+	}
+	.section-item__sml {
+		width: 100%;
+	}
+}
