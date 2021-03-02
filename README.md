@@ -59,18 +59,19 @@ Each example will have these root CSS styles:
 }
 ```
 
+We have a 600x200 grey outer div, and a 250x100 blue inner div. The goal is to center the blue div vertically and horizontally inside the red div.
+
 <p align="left">
   <img src="/src/assets/css-center-div-01.png" width="300" alt="css-center-div">
 </p>
 
-We have a 600x200 grey outer div, and a 250x100 blue inner div. The goal is to find the best ways to center the blue div vertically and horizontally inside the red div. \
 We should get this end result:
 
 <p align="left">
   <img src="/src/assets/css-center-div-02.png" width="300" alt="css-center-div">
 </p>
 
-### Flexbox
+### Flexbox:
 ```css
 .outer-div {
   display: flex;
@@ -90,7 +91,7 @@ Or:
 }
 ```
 
-### Grid
+### Grid:
 ```css
 .outer-div {
   display: grid;
@@ -117,7 +118,7 @@ Or:
 }
 ```
 
-### Absolute Positioning
+### Absolute Positioning:
 ```css
 .outer-div {
   position: relative;
@@ -207,7 +208,7 @@ Neon:
 }
 ```
 
-#### RGB
+#### RGB:
 RGB numbers are based upon monitor settings of red, green, and blue light. By changing the RGB numbers, you’re telling your monitor how much of that particular light color you want to shine.
 
 RGB defines the values of red (the first number), green (the second number), or blue (the third number). The number 0 signifies no representation of the color and 255 signifies the highest possible concentration of the color.
@@ -216,7 +217,7 @@ RGB defines the values of red (the first number), green (the second number), or 
 
 In the above example, you get the brightest red possible without any green or blue presented. If you wanted only green, you’d use `RGB(0, 255, 0)` and for blue, `RGB(0, 0, 255)`.
 
-#### Hexadecimal (Hex)
+#### Hexadecimal (Hex):
 We use hexadecimal numbers because it’s a human-friendly representation of values in binary code. Hex color codes start with a pound sign or hashtag (#) and are followed by six letters and/or numbers. 
 
 The first two letters/numbers refer to _red_, the next two refer to _green_, and the last two refer to _blue_. The color values are defined in values between 00 and FF (instead of from 0 to 255 in RGB).
