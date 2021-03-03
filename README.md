@@ -17,20 +17,24 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 `/src/css/` - contains all CSS component files.
 
 ## 📌 Repo File Components
-1. Component 1
-1. Component 2
-1. Component 3
+1. Box-Shadow
+1. Cards
+1. Colors
+1. Icons
+1. Layout
 
 ## 🔗 Resources
-- [CSS -> JavaScript](https://css2js.dotenv.dev/)
 - [Guide to CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Material Design](https://material.io/)
 - [PurgeCSS](https://purgecss.com/#sponsors-%F0%9F%A5%B0)
+- [CSS -> JavaScript](https://css2js.dotenv.dev/)
 
 ## 📓 Notes
 ### Table of Contents
 
   1. [Centering a Div](#centering-a-div)
   1. [Color](#color)
+  1. [Icons](#icons)
 
 ---
 
@@ -241,6 +245,30 @@ For example, the hexadecimal number for the number 83 is actually 131. We come t
 1. Adding the two totals together (128+3=131).
 
 Working with letters is the same concept. For example, FF = 255 because you multiply the number that represents F (15) by 16, then multiply the number that represents the second F (15) by 1. Then add the two totals together to equal 255. Recognize that the number 255 is the same as the RGB number 255, which is bright red.
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### Icons
+
+#### Resources:
+* [Google Icons](https://fonts.google.com/icons)
+
+#### Google Icons:
+Icon fonts are fonts that contain symbols and glyphs instead of letters or numbers. A major advantage of icon fonts is they scale very nicely; they increase in size with much better quality than raster images. Also, since a font icon is text, CSS can easily be applied to adjust the size and change the color.
+
+To use Google Icon Fonts, add the following line inside the `<head>` section of your HTML file:
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+Next, to incorporate the icons into our webpage, add the following line wherever we want the icon in our HTML file:
+```html
+<span class="material-icons">cloud</span>
+```
+
+Output: <img src="/src/assets/cloud.svg" width="50">
 
 **[⬆ Top](#table-of-contents)**
 
