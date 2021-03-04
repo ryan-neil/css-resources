@@ -277,7 +277,7 @@ Usage:
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-4.png" width="225" alt="depth-4-card">
+  <img src="/src/assets/card-depth-4.png" width="260" alt="depth-4-card">
 </p>
 
 #### Depth Level 8:
@@ -293,7 +293,7 @@ Usage:
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-8.png" width="250" alt="depth-8-card">
+  <img src="/src/assets/card-depth-8.png" width="265" alt="depth-8-card">
 </p>
 
 #### Depth Level 16:
@@ -310,7 +310,7 @@ Usage:
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-16.png" width="275" alt="depth-16-card">
+  <img src="/src/assets/card-depth-16.png" width="270" alt="depth-16-card">
 </p>
 
 #### Depth Level 64:
@@ -325,7 +325,7 @@ Usage:
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-64.png" width="300" alt="depth-64-card">
+  <img src="/src/assets/card-depth-64.png" width="280" alt="depth-64-card">
 </p>
 
 **[⬆ Top](#table-of-contents)**
