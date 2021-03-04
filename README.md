@@ -20,12 +20,14 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 1. Box-Shadow
 1. Cards
 1. Colors
+1. Fonts
 1. Icons
 1. Layout
 
 ## 🔗 Resources
+- [Google Material Design](https://material.io/)
+- [IBM Design Language](https://www.ibm.com/design/language/)
 - [Guide to CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Material Design](https://material.io/)
 - [PurgeCSS](https://purgecss.com/#sponsors-%F0%9F%A5%B0)
 - [CSS -> JavaScript](https://css2js.dotenv.dev/)
 
@@ -34,6 +36,8 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 
   1. [Centering a Div](#centering-a-div)
   1. [Color](#color)
+  1. [Depth](#depth)
+  1. [Fonts](#fonts)
   1. [Icons](#icons)
 
 ---
@@ -156,6 +160,8 @@ OR
 ### Color
 
 #### Resources:
+* [Shopify Color](https://polaris.shopify.com/design/colors#navigation)
+* [IBM Color](https://www.ibm.com/design/language/color)
 * [TailwindCSS Colors](https://tailwindcss.com/docs/customizing-colors)
 * [Coolors](https://coolors.co/)
 * [HTML Color Codes](https://htmlcolorcodes.com/)
@@ -250,6 +256,86 @@ Working with letters is the same concept. For example, FF = 255 because you mult
 
 ---
 
+### Depth
+
+#### Resources:
+* [Microsoft Depth](https://developer.microsoft.com/en-us/fluentui#/styles/web/elevation)
+
+Depth (also referred to as elevation) is used to draw focus to an experience and add a physical materiality to the app. Shallow levels are reserved for items that are closely connected to the canvas or view, such as tiles. Deeper levels create a prominent frame around the surface, drawing strong focus to self-contained experiences like dialogs.
+
+The following examples are based on Microsoft's UI elevation chart:
+
+##### Depth Level 4:
+Usage:
+* Cards
+* Grid item thumbnails
+
+```css
+.card.depth4 {
+  // depth 4
+  box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,.132),0 .3px .9px 0 rgba(0,0,0,.108);
+}
+```
+
+<p align="left">
+  <img src="/src/assets/card-depth-4.png" width="200" alt="depth-4-card">
+</p>
+
+##### Depth Level 8:
+Usage:
+* Command bars
+* Command dropdowns
+* Context menus
+
+```css
+.card.depth8 {
+  // depth 8
+  box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132),0 .6px 1.8px 0 rgba(0,0,0,.108);
+}
+```
+
+<p align="left">
+  <img src="/src/assets/card-depth-8.png" width="200" alt="depth-8-card">
+</p>
+
+##### Depth Level 16:
+Usage:
+* Teaching callouts
+* Search results dropdown
+* Hover cards
+* Tooltips
+
+```css
+.card.depth16 {
+  // depth 16
+  box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,.132),0 1.2px 3.6px 0 rgba(0,0,0,.108);
+}
+```
+
+<p align="left">
+  <img src="/src/assets/card-depth-16.png" width="200" alt="depth-16-card">
+</p>
+
+##### Depth Level 64:
+Usage:
+* Panels
+* Pop up dialogs
+
+```css
+.card.depth64 {
+  // depth 64
+  box-shadow: 0 25.6px 57.6px 0 rgba(0,0,0,.22),0 4.8px 14.4px 0 rgba(0,0,0,.18);
+}
+```
+
+<p align="left">
+  <img src="/src/assets/card-depth-64.png" width="200" alt="depth-64-card">
+</p>
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
 ### Icons
 
 #### Resources:
@@ -265,10 +351,43 @@ To use Google Icon Fonts, add the following line inside the `<head>` section of 
 
 Next, to incorporate the icons into our webpage, add the following line wherever we want the icon in our HTML file:
 ```html
-<span class="material-icons">cloud</span>
+<span class="material-icons" style="color:blue;">cloud</span>
+```
+OR
+```html
+<i class="material-icons" style="color:blue;">cloud</i>
 ```
 
-Output: <img src="/src/assets/cloud.svg" width="50">
+Output:
+
+<img src="/src/assets/cloud.svg" width="50">
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### Fonts
+
+#### Resources:
+* [Google Fonts](https://fonts.google.com/)
+* [Font Pairing](https://fontpair.co/)
+
+#### Google Fonts
+Google Fonts is a library of more than a thousand free and open source font families and APIs for conveniently using the fonts via CSS.
+
+To add Google Fonts to our project, add a special style sheet link to the `<head>` section. Here's an example using my current favorite font, Quicksand:
+```html
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+</head>
+```
+Now we must refer to the font in our CSS file:
+```css
+html {
+  font-family: 'Quicksand', sans-serif
+};
+```
 
 **[⬆ Top](#table-of-contents)**
 
