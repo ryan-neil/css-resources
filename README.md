@@ -272,13 +272,12 @@ Usage:
 
 ```css
 .card.depth4 {
-  /* depth 4 */
   box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,.132),0 .3px .9px 0 rgba(0,0,0,.108);
 }
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-4.png" width="200px" alt="depth-4-card">
+  <img src="/src/assets/card-depth-4.png" width="300" alt="depth-4-card">
 </p>
 
 #### Depth Level 8:
@@ -289,13 +288,12 @@ Usage:
 
 ```css
 .card.depth8 {
-  /* depth 8 */
   box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132),0 .6px 1.8px 0 rgba(0,0,0,.108);
 }
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-8.png" width="200" alt="depth-8-card">
+  <img src="/src/assets/card-depth-8.png" width="300" alt="depth-8-card">
 </p>
 
 #### Depth Level 16:
@@ -307,13 +305,12 @@ Usage:
 
 ```css
 .card.depth16 {
-  /* depth 16 */
   box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,.132),0 1.2px 3.6px 0 rgba(0,0,0,.108);
 }
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-16.png" width="200" alt="depth-16-card">
+  <img src="/src/assets/card-depth-16.png" width="300" alt="depth-16-card">
 </p>
 
 #### Depth Level 64:
@@ -323,13 +320,12 @@ Usage:
 
 ```css
 .card.depth64 {
-  /* depth 64 */
   box-shadow: 0 25.6px 57.6px 0 rgba(0,0,0,.22),0 4.8px 14.4px 0 rgba(0,0,0,.18);
 }
 ```
 
 <p align="left">
-  <img src="/src/assets/card-depth-64.png" width="200" alt="depth-64-card">
+  <img src="/src/assets/card-depth-64.png" width="300" alt="depth-64-card">
 </p>
 
 **[⬆ Top](#table-of-contents)**
