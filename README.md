@@ -20,6 +20,8 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 1. Box-Shadow
 1. Cards
 1. Colors
+1. CSS Flex
+1. CSS Grid
 1. Fonts
 1. Icons
 1. Layout
@@ -27,7 +29,6 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 ## 🔗 Resources
 - [Google Material Design](https://material.io/)
 - [IBM Design Language](https://www.ibm.com/design/language/)
-- [Guide to CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [PurgeCSS](https://purgecss.com/#sponsors-%F0%9F%A5%B0)
 - [CSS -> JavaScript](https://css2js.dotenv.dev/)
 
@@ -35,6 +36,8 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 ### Table of Contents
 
   1. [Centering a Div](#centering-a-div)
+  1. [CSS Flexbox](#css-flexbox)
+  1. [CSS Grid](#css-grid)
   1. [Color](#color)
   1. [Depth](#depth)
   1. [Fonts](#fonts)
@@ -152,6 +155,27 @@ OR
   margin: auto;
 }
 ```
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### CSS Flex
+
+#### Resources:
+* [CSS Flexbox](#css-flexbox)
+
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### CSS Grid
+
+#### Resources:
+* [Guide to CSS Grid](https://dev.to/joyshaheb/)
+* [Grid Cheatsheet 2021](https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3)
+
 
 **[⬆ Top](#table-of-contents)**
 
@@ -342,16 +366,22 @@ Icon fonts are fonts that contain symbols and glyphs instead of letters or numbe
 
 To use Google Icon Fonts, add the following line inside the `<head>` section of your HTML file:
 ```html
+<head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 ```
 
 Next, to incorporate the icons into our webpage, add the following line wherever we want the icon in our HTML file:
 ```html
-<span class="material-icons" style="color:blue;">cloud</span>
+<body>
+  <span class="material-icons" style="color:blue;">cloud</span>
+</body>
 ```
 OR
 ```html
-<i class="material-icons" style="color:blue;">cloud</i>
+<body>
+  <i class="material-icons" style="color:blue;">cloud</i>
+</body>
 ```
 
 Output:
