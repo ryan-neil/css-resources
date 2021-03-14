@@ -33,6 +33,7 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 - [Undesign - Design Tools](https://undesign.learn.uno/)
 - [CSS -> JavaScript](https://css2js.dotenv.dev/)
 - [Responsively](https://responsively.app/)
+- [Hero Generator](https://hero-generator.netlify.app/)
 
 ## 📓 Notes
 ### Table of Contents
@@ -175,6 +176,7 @@ OR
 ### CSS Grid
 
 #### Resources:
+* [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
 * [Guide to CSS Grid](https://dev.to/joyshaheb/)
 * [Grid Cheatsheet 2021](https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3)
 
