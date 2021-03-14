@@ -30,7 +30,9 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 - [Google Material Design](https://material.io/)
 - [IBM Design Language](https://www.ibm.com/design/language/)
 - [PurgeCSS](https://purgecss.com/#sponsors-%F0%9F%A5%B0)
+- [Undesign - Design Tools](https://undesign.learn.uno/)
 - [CSS -> JavaScript](https://css2js.dotenv.dev/)
+- [Responsively](https://responsively.app/)
 
 ## 📓 Notes
 ### Table of Contents
@@ -184,6 +186,7 @@ OR
 ### Color
 
 #### Resources:
+* [Colorinspo](https://colorsinspo.com/)
 * [Shopify Color](https://polaris.shopify.com/design/colors#navigation)
 * [IBM Color](https://www.ibm.com/design/language/color)
 * [TailwindCSS Colors](https://tailwindcss.com/docs/customizing-colors)
