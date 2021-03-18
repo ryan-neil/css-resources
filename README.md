@@ -11,20 +11,28 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 ###### If you found this guide helpful give me a follow and let me know! 🤙🏻
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/josephskycrest.svg?style=social&label=Follow%20%40josephskycrest)](https://twitter.com/josephskycrest)
 
-## 📂 Repo Folder Structure
-`/src/` - contains the source files for the Github repo. \
-`/src/assets/` contains images for the repo. \
-`/src/css/` - contains all CSS component files.
+## 🧐 What's inside?
+A quick look at the files and directories you'll see in the repo.
 
-## 📌 Repo File Components
-1. Box-Shadow
-1. Cards
-1. Colors
-1. CSS Flex
-1. CSS Grid
-1. Fonts
-1. Icons
-1. Layout
+```bash
+  .
+  ├── src
+    ├── assets
+      ├── repo image files
+    └── css
+      ├── box-shadow
+      ├── cards
+      ├── colors
+      ├── css-flex
+      ├── css-grid
+      ├── fonts
+      ├── icons
+      └── layout
+```
+
+1. **`/src`**: This directory contains all of the source files for the Github repo. \
+    1. **`/assets`**: This directory contains images for the repo. \
+    1. **`/css`**: This directory contains all css component files.
 
 ## 🔗 Resources
 - [Google Material Design](https://material.io/)
@@ -49,7 +57,7 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 ---
 
 ### Centering a Div
-Yes, the dreaded centering in CSS... There are many ways to achieve this but luckily _Flex_ and _Grid_ have made our lives much easier.
+Yes, the dreaded centering in CSS... There are many ways to achieve this but luckily __Flex__ and __Grid__ have made our lives much easier.
 
 For each example we will be using the following HTML:
 ```html
@@ -163,10 +171,10 @@ OR
 
 ---
 
-### CSS Flex
+### CSS Flexbox
 
 #### Resources:
-* [CSS Flexbox](#css-flexbox)
+* [CSS Tricks Flexbox](#https://medium.com/codingthesmartway-com-blog/pure-javascript-building-a-real-world-application-from-scratch-5213591cfcd6)
 
 
 **[⬆ Top](#table-of-contents)**
@@ -176,6 +184,7 @@ OR
 ### CSS Grid
 
 #### Resources:
+* [CSS Tricks Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
 * [Guide to CSS Grid](https://dev.to/joyshaheb/)
 * [Grid Cheatsheet 2021](https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3)
@@ -194,8 +203,8 @@ OR
 * [TailwindCSS Colors](https://tailwindcss.com/docs/customizing-colors)
 * [Coolors](https://coolors.co/)
 * [HTML Color Codes](https://htmlcolorcodes.com/)
-* [BrandColors](https://brandcolors.net/)
 * [ColorSpace](https://mycolor.space/)
+* [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
 
 Companies:
 ```css
