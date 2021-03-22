@@ -1,0 +1,62 @@
+/* 
+==========================
+Colors
+==========================
+*/
+:root {
+	--white: #ffffff;
+	--light: #f7f8f9;
+	--dark: #1b1e2c;
+	--dark-light: #282d3f;
+	--text-light-primary: #1b1d1f;
+	--text-light-secondary: #939495;
+	--text-dark-primary: #ffffff;
+	--text-dark-secondary: #b3b3b3;
+	--color-red: #ff4000;
+	--color-green: #63d000;
+	--color-blue: #00aff5;
+	--color-yellow: #ffbb00;
+	--color-box-shadow: #2b2d34;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-md: 1.0625rem;
+	--font-size-lg: 1.25rem;
+	--font-size-xl: 2.25rem;
+	--box-shadow-sm: 0px 2px 4px 0px rgba(14, 30, 37, 0.12);
+	--box-shadow-md: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+	--box-shadow-lg: -10px 10px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: -apple-system, "Segoe UI", sans-serif;
+}
+
+/* 
+==========================
+[Section]
+==========================
+*/
+
+/* 
+=================================
+[Section] Responsive Media
+=================================
+*/
+/* Medium */
+@media screen and (max-width: 62em) {
+	/* Code goes here */
+}
+/* Small */
+@media screen and (max-width: 36em) {
+	/* Code goes here */
+}
+/* All Size */
+@media screen and (max-width: 51em) {
+	/* Code goes here */
+}

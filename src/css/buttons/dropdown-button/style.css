@@ -1,0 +1,156 @@
+/* 
+==========================
+Colors
+==========================
+*/
+:root {
+	--white: #ffffff;
+	--light: #f7f8f9;
+	--dark: #1b1e2c;
+	--dark-light: #282d3f;
+	--text-light-primary: #1b1d1f;
+	--text-light-secondary: #939495;
+	--text-dark-primary: #ffffff;
+	--text-dark-secondary: #b3b3b3;
+	--color-red: #ff4000;
+	--color-green: #63d000;
+	--color-blue: #00aff5;
+	--color-yellow: #ffbb00;
+	--color-box-shadow: #2b2d34;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-md: 1.0625rem;
+	--font-size-lg: 1.25rem;
+	--font-size-xl: 2.25rem;
+	--box-shadow-sm: 0px 2px 4px 0px rgba(14, 30, 37, 0.12);
+	--box-shadow-md: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+	--box-shadow-lg: -10px 10px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: -apple-system, "Segoe UI", sans-serif;
+}
+
+/* 
+==========================
+[Section]
+==========================
+*/
+/* Body */
+body {
+	background: var(--dark-light);
+	height: 100%;
+	color: rgba(0, 0, 0, 0.87);
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+.btn-dropdown-container {
+	position: relative;
+	top: 50%;
+}
+
+.btn-dropdown {
+	position: relative;
+	background: #5380f7;
+	width: auto;
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 16px 20px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.btn-dropdown:hover .dropdown-list,
+.btn-dropdown:active .dropdown-list {
+	transform: translate(0, 20px);
+	opacity: 1;
+	visibility: visible;
+}
+.btn-dropdown .dropdown-list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #ffffff;
+	height: auto;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s ease;
+}
+.btn-dropdown .dropdown-list:before {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 20px;
+	width: 0;
+	height: 0;
+	box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.05);
+	border-top: 7px solid #ffffff;
+	border-right: 7px solid #ffffff;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid transparent;
+	transform: rotate(-45deg);
+}
+.btn-dropdown .dropdown-list li {
+	list-style: none;
+	z-index: 1;
+	/* position: relative; */
+	background: #ffffff;
+	padding: 0 18px;
+	color: var(--text-light-primary);
+	opacity: 0.6;
+}
+.btn-dropdown .dropdown-list li:hover {
+	opacity: 1;
+}
+.btn-dropdown .dropdown-list li:first-child {
+	border-radius: 4px 4px 0 0;
+}
+.btn-dropdown .dropdown-list li:last-child {
+	border-radius: 0 0 4px 4px;
+}
+.btn-dropdown .dropdown-list li:last-child a {
+	border-bottom: 0;
+}
+.btn-dropdown .dropdown-list a {
+	display: block;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	padding: 16px 0;
+	color: inherit;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+/* 
+=================================
+[Section] Responsive Media
+=================================
+*/
+/* Medium */
+@media screen and (max-width: 62em) {
+	/* Code goes here */
+}
+/* Small */
+@media screen and (max-width: 36em) {
+	/* Code goes here */
+}
+/* All Size */
+@media screen and (max-width: 51em) {
+	/* Code goes here */
+}

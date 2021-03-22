@@ -205,6 +205,7 @@ OR
 * [HTML Color Codes](https://htmlcolorcodes.com/)
 * [ColorSpace](https://mycolor.space/)
 * [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
+* [Happy Hues](https://www.happyhues.co/)
 
 Companies:
 ```css
@@ -298,6 +299,7 @@ Working with letters is the same concept. For example, FF = 255 because you mult
 
 #### Resources:
 * [Microsoft Depth](https://developer.microsoft.com/en-us/fluentui#/styles/web/elevation)
+* [Generate Box Shadows](https://shadows.brumm.af/)
 
 Depth (also referred to as elevation) is used to draw focus to an experience and add a physical materiality to the app. Shallow levels are reserved for items that are closely connected to the canvas or view, such as tiles. Deeper levels create a prominent frame around the surface, drawing strong focus to self-contained experiences like dialogs.
 
@@ -410,7 +412,9 @@ Output:
 
 #### Resources:
 * [Google Fonts](https://fonts.google.com/)
-* [Font Pairing](https://fontpair.co/)
+* [Font Pairing](https://fontjoy.com/)
+* [Font Sizing - Type Scale](https://type-scale.com/)
+
 
 #### Google Fonts
 Google Fonts is a library of more than a thousand free and open source font families and APIs for conveniently using the fonts via CSS.
