@@ -9,7 +9,7 @@ The goal of this document is to provide a quick reference guide for features of 
 This guide is not intended to teach you the fundamentals of CSS but merely a reference guide to come back to for a reference of general tips and tricks.
 
 ###### If you found this guide helpful give me a follow and let me know! 🤙🏻
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/josephskycrest.svg?style=social&label=Follow%20%40josephskycrest)](https://twitter.com/josephskycrest)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/home?lang=en)
 
 ## 🧐 What's inside?
 A quick look at the files and directories you'll see in the repo.
@@ -42,6 +42,8 @@ A quick look at the files and directories you'll see in the repo.
 - [CSS -> JavaScript](https://css2js.dotenv.dev/)
 - [Responsively](https://responsively.app/)
 - [Hero Generator](https://hero-generator.netlify.app/)
+- [CSS Reference Sheet](https://pixllabs.io/blog/web-development/css-cheat-sheet/)
+- [HTML Cheatsheet](https://overapi.com/html)
 
 ## 📓 Notes
 ### Table of Contents
@@ -49,6 +51,7 @@ A quick look at the files and directories you'll see in the repo.
   1. [Centering a Div](#centering-a-div)
   1. [CSS Flexbox](#css-flexbox)
   1. [CSS Grid](#css-grid)
+  1. [CSS Variables](#css-variables)
   1. [Color](#color)
   1. [Depth](#depth)
   1. [Fonts](#fonts)
@@ -174,7 +177,7 @@ OR
 ### CSS Flexbox
 
 #### Resources:
-* [CSS Tricks Flexbox](#https://medium.com/codingthesmartway-com-blog/pure-javascript-building-a-real-world-application-from-scratch-5213591cfcd6)
+* [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 
 **[⬆ Top](#table-of-contents)**
@@ -189,6 +192,68 @@ OR
 * [Guide to CSS Grid](https://dev.to/joyshaheb/)
 * [Grid Cheatsheet 2021](https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3)
 
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### CSS Variables
+
+#### Resources:
+
+The `var()` function is used to insert the value of a CSS variable. CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
+
+__Syntax__:
+```css
+var(name, value)
+```
+
+> Note: The variable name must begin with two dashes (`--`) and it is case sensitive!
+
+Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
+
+To create a variable with global scope, declare it inside the `:root` selector. The `:root` selector matches the document's root element.
+
+To create a variable with local scope, declare it inside the selector that is going to use it.
+
+__Example__:
+```css
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+}
+```
+Advantages of using var() are:
+  * makes the code easier to read (more understandable).
+  * makes it much easier to change the color, sizing and spacing values.
+
+### Changing CSS Variables with JavaScript
+CSS variables have access to the DOM, which means that you can change them with JavaScript.
+
+__Example__:
+```js
+// get the root element
+const root = document.querySelector(':root');
+
+// Create a function for getting a variable value
+function getVariableValue() {
+	// get the styles (properties and values) for the root
+	const rootStyle = getComputedStyle(root);
+	// print the value of the --white variable
+	rootStyle.getPropertyValue('--white'); // -> #ffffff
+}
+
+// Create a function for setting a variable value
+function setVariableValue() {
+	// Set the value of variable --white to another value (in this case "gray")
+	root.style.setProperty('--white', 'gray');
+}
+```
 
 **[⬆ Top](#table-of-contents)**
 
@@ -423,7 +488,7 @@ To add Google Fonts to our project, add a special style sheet link to the `<head
 ```html
 <head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 ```
 Now we must refer to the font in our CSS file:
