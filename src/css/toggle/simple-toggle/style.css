@@ -1,0 +1,117 @@
+/* font-family: 'Lobster', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+	--white: #ffffff;
+	--light: #f7f9fd;
+	--color-toggle-on: #27c840;
+	--color-toggle-off: #ff5e57;
+	--font-size-sm: 0.875rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Quicksand', sans-serif;
+}
+body {
+	background-color: var(--light);
+}
+
+/* 
+==========================
+[Toggle] Style
+==========================
+*/
+.toggle-input {
+	display: none;
+}
+/* toggle circle location */
+.toggle-input:checked + .toggle-btn.switch:after {
+	left: calc(2.16em + 2px);
+}
+/* "on" text display when toggle in "on" */
+.toggle-input:checked + .toggle-btn.switch span.on {
+	opacity: 1;
+}
+/* "off" text display when toggle in "on" */
+.toggle-input:checked + .toggle-btn.switch span.off {
+	opacity: 0;
+}
+/* toggle "on" border color */
+.toggle-input:checked + .toggle-btn {
+	border: solid 2px var(--color-toggle-on);
+}
+/* pill styles */
+.toggle-btn {
+	display: block;
+	position: relative;
+	height: 1.8em;
+	background-color: var(--light);
+	border: solid 2px var(--color-toggle-off);
+	border-radius: 1em;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+/* pill sizing */
+.toggle-btn.switch {
+	width: 4em;
+	/* centers the "on" and "off" text */
+	padding: 2px;
+}
+.toggle-btn.switch span {
+	display: block;
+	position: absolute;
+	/* "on" text location */
+	width: calc(4em - 4px);
+	line-height: calc(2em - 4px);
+	font-size: var(--font-size-sm);
+	font-weight: 700;
+	transition: opacity 0.3s ease;
+}
+/* "on" text location */
+.toggle-btn.switch span.on {
+	opacity: 0;
+	text-align: right;
+	padding-right: 2em;
+}
+/* "off" text location */
+.toggle-btn.switch span.off {
+	opacity: 1;
+	text-align: left;
+	padding-left: 1.8em;
+}
+.toggle-btn.switch:after {
+	content: ''; /* ?  */
+	display: block; /* ?  */
+	position: absolute;
+	border-radius: 50%;
+	top: 2px; /* ?  */
+	left: 2px; /* ?  */
+	transition: left 0.2s ease;
+}
+/* text ("on" and "off") line height */
+.toggle-btn.switch span {
+	line-height: calc(2em - 8px);
+}
+/* font color when "on" */
+.toggle-btn.switch span.on {
+	color: var(--color-toggle-on);
+}
+/* font color when "off" */
+.toggle-btn.switch span.off {
+	color: var(--color-toggle-off);
+}
+/* circle toggle sizing and color when "off" */
+.toggle-btn.switch:after {
+	width: calc(1.6em - 4px);
+	height: calc(1.6em - 4px);
+	background-color: var(--color-toggle-off);
+}
+/* circle toggle color when "on" */
+.toggle-input:checked + .toggle-btn.switch:after {
+	background-color: var(--color-toggle-on);
+}

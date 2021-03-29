@@ -1,0 +1,83 @@
+/* font-family: 'Lobster', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+	/* Portfolio Colors */
+	--color-primary: #ffbd32;
+	--color-primary-light: #ffd271;
+	--color-secondary: #1b1e2c;
+	--color-secondary-light: #272d41;
+	--white: #ffffff;
+	--light: #f7f9fd;
+	--box-shadow: #2d313d;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Quicksand', sans-serif;
+}
+body {
+	background-color: var(--light);
+}
+
+/* 
+==========================
+[Button] Style
+==========================
+*/
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn {
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: auto;
+	padding: .5rem 1rem;
+	background-image: linear-gradient(
+		180deg,
+		#ffcb5c 10%,
+		#ffbd32 45%
+	);
+	border: 1px solid var(--color-primary-light);
+	border-radius: 0.3rem;
+	box-shadow: 0 0 2px -1px var(--box-shadow),
+		0 2px 9px -5px var(--box-shadow);
+	transition: .2s;
+}
+.btn__text {
+	padding: 0 1.2rem;
+	font-size: 1rem;
+	background: none;
+	color: var(--color-secondary-light);
+	cursor: pointer;
+	border: none;
+}
+.btn__text:hover {
+	opacity: .8;
+}
+.btn__icon {
+	width: 1.4rem;
+	fill: var(--color-secondary-light);
+	background: none;
+	cursor: pointer;
+	border: none;
+}
+.btn__icon:hover {
+	opacity: .8;
+}
+.vertical-line {
+	width: 1px;
+	margin: 0 1rem;
+	background-color: var(--color-secondary-light);
+	height: 22px;
+	opacity: .6;
+}
