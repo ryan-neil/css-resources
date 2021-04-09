@@ -48,6 +48,7 @@ A quick look at the files and directories you'll see in the repo.
 ## 📓 Notes
 ### Table of Contents
 
+  1. [HTML](#quick-html-tips)
   1. [Centering a Div](#centering-a-div)
   1. [CSS Flexbox](#css-flexbox)
   1. [CSS Grid](#css-grid)
@@ -56,6 +57,23 @@ A quick look at the files and directories you'll see in the repo.
   1. [Depth](#depth)
   1. [Fonts](#fonts)
   1. [Icons](#icons)
+
+---
+
+### Quick HTML Tips
+
+### Tags
+When it comes to HTML tags, some general guidelines to follow are:
+
+`<h1>` - One per page.
+
+`<h2>` - One per major section.
+
+`<section>` - Use `section` tags to group the main sections of the page (hero, projects, etc.).
+
+`<article>` - Use article tags to group smaller sections within the sections. If it's a "projects" section, each "project" could be wrapped in an `article` tag.
+
+**[⬆ Top](#table-of-contents)**
 
 ---
 
@@ -179,7 +197,6 @@ OR
 #### Resources:
 * [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-
 **[⬆ Top](#table-of-contents)**
 
 ---
@@ -269,6 +286,7 @@ function setVariableValue() {
 * [Coolors](https://coolors.co/)
 * [HTML Color Codes](https://htmlcolorcodes.com/)
 * [ColorSpace](https://mycolor.space/)
+* [CSS Gradient](https://cssgradient.io/)
 * [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
 * [Happy Hues](https://www.happyhues.co/)
 
