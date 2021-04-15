@@ -53,6 +53,7 @@ A quick look at the files and directories you'll see in the repo.
   1. [CSS Flexbox](#css-flexbox)
   1. [CSS Grid](#css-grid)
   1. [CSS Variables](#css-variables)
+  1. [CSS BEM](#css-bem)
   1. [Color](#color)
   1. [Depth](#depth)
   1. [Fonts](#fonts)
@@ -72,6 +73,25 @@ When it comes to HTML tags, some general guidelines to follow are:
 `<section>` - Use `section` tags to group the main sections of the page (hero, projects, etc.).
 
 `<article>` - Use article tags to group smaller sections within the sections. If it's a "projects" section, each "project" could be wrapped in an `article` tag.
+
+### File Paths
+Not too long after we start learning HTML, you start learning how to link to other HTML and CSS files. It is fairly straight forward when the files are in the same directory. Where it starts to get more complicated is when we need to go up a directory instead of (or before) going down into one.
+
+In the example below, we are setting the background-image for a web page in our `main.css` file. The `main.css` file is in the `CSS` directory. We are linking to an image in the `img` directory.
+```css
+body {
+  background-image: url("../img/moon.png");
+}
+```
+Both of these directories (aka folders) are in the `root` directory. Therefore, we need to go up and out of the `CSS` directory and then down into the `img` directory.
+
+We go up one directory with two dots: "`..`"
+
+From there, we go down into the `img` directory to link to the `moon.png` file.
+
+If we needed to go up two directories, the file path would start like this: "`../../`"
+
+> Remember, one dot indicates the directory you are in. Two dots indicates the directory above where you currently are.
 
 **[⬆ Top](#table-of-contents)**
 
@@ -276,19 +296,68 @@ function setVariableValue() {
 
 ---
 
+### CSS BEM
+The __Block__, __Element__, __Modifier__ methodology (commonly referred to as __BEM__) is a popular naming convention for classes in HTML and CSS. Its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
+
+Here's an example of what writing in the BEM style might look like:
+```css
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__primary {}
+
+/* Modifier that changes the style of the block */
+.btn--blue {} 
+.btn--small {}
+```
+In this CSS methodology a __block__ is a top-level abstraction of a new component, for example a button: `.btn { }`. This block should be thought of as a parent. 
+
+Child items, or __elements__, can be placed inside and these are denoted by two underscores following the name of the block like `.btn__primary { }`. 
+
+Finally, __modifiers__ can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like `.btn--orange`.
+
+The HTML markup might then look like this:
+```html
+<a class="btn btn--small btn--blue" href="https://josephskycrest.com">
+  <span class="btn__primary">Submit</span>
+  <span class="btn__secondary">Cancel</span>
+</a>
+```
+#### So why should we consider using BEM?
+
+1. If we want to make a new style of a component, we can easily see which modifiers and children already exist. We might even realize we don’t need to write any CSS in the first place because there is a pre-existing modifier that does what we need.
+
+2. If we are reading the markup instead of CSS, we should be able to quickly get an idea of which element depends on another (in the previous example we can see that `.btn__primary` depends on `.btn`, even if we don’t know what that does just yet.)
+
+3. Designers and developers can consistently name components for easier communication between team members. In other words, BEM gives everyone on a project a declarative syntax that they can share so that they’re on the same page.
+
+For my visual learners out there:
+<p align="left">
+  <img src="/src/assets/css-bem.png" width="260" alt="CSS BEM">
+</p>
+
+Although BEM won't solve all of our problems it is extraordinarily useful for constructing scalable and maintainable interfaces where everyone on the team should have a clear idea of how things can be improved. 
+
+This is because a great deal of front end development is not just about the nice tricks that solve one little problem in the short term; we need agreements, promises and binding social contracts between developers so that our codebase can adapt over time.
+
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
 ### Color
 
 #### Resources:
 * [Colorinspo](https://colorsinspo.com/)
+* [HTML Color Codes](https://htmlcolorcodes.com/)
+* [CSS Gradient Generator](https://cssgradient.io/)
+* [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
+* [Happy Hues](https://www.happyhues.co/)
+* [ColorSpace](https://mycolor.space/)
 * [Shopify Color](https://polaris.shopify.com/design/colors#navigation)
 * [IBM Color](https://www.ibm.com/design/language/color)
 * [TailwindCSS Colors](https://tailwindcss.com/docs/customizing-colors)
-* [Coolors](https://coolors.co/)
-* [HTML Color Codes](https://htmlcolorcodes.com/)
-* [ColorSpace](https://mycolor.space/)
-* [CSS Gradient](https://cssgradient.io/)
-* [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
-* [Happy Hues](https://www.happyhues.co/)
 
 Companies:
 ```css
@@ -459,6 +528,7 @@ Usage:
 
 #### Resources:
 * [Google Icons](https://fonts.google.com/icons)
+* [Flat Icon](https://www.flaticon.com/)
 
 #### Google Icons:
 Icon fonts are fonts that contain symbols and glyphs instead of letters or numbers. A major advantage of icon fonts is they scale very nicely; they increase in size with much better quality than raster images. Also, since a font icon is text, CSS can easily be applied to adjust the size and change the color.
