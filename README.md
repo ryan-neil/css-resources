@@ -334,7 +334,7 @@ The HTML markup might then look like this:
 
 For my visual learners out there:
 <p align="left">
-  <img src="/src/assets/css-bem.png" width="900" alt="CSS BEM">
+  <img src="/src/assets/css-bem.png" width="525" alt="CSS BEM">
 </p>
 
 Although BEM won't solve all of our problems it is extraordinarily useful for constructing scalable and maintainable interfaces where everyone on the team should have a clear idea of how things can be improved. 
