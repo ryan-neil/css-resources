@@ -50,6 +50,7 @@ A quick look at the files and directories you'll see in the repo.
 
   1. [HTML](#quick-html-tips)
   1. [Centering a Div](#centering-a-div)
+  1. [CSS Generators](#css-generators)
   1. [CSS Flexbox](#css-flexbox)
   1. [CSS Grid](#css-grid)
   1. [CSS Variables](#css-variables)
@@ -207,6 +208,40 @@ OR
   margin: auto;
 }
 ```
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### CSS Generators
+Generators allow you to cut back on time consuming tasks. Here's a collection of some of my most used generators.
+
+#### 1. Neumorphism/Soft UI generator
+[neumorphism.io](https://neumorphism.io/#e0e0e0)
+
+#### 2. Smooth Shadow generator
+[shadows.brumm.af](https://shadows.brumm.af/)
+
+#### 3. Border Radius Generator
+[fancy-border-radius](https://9elements.github.io/fancy-border-radius/)
+
+#### 4. Easing Gradients
+[larsenwork.com/easing-gradients](https://larsenwork.com/easing-gradients/)
+
+#### 5. Data Viz Color Palette Generator
+[learnui.design/tools/data-color-picker.html](https://learnui.design/tools/data-color-picker.html)
+
+#### 6. Grid Generator
+[cssgrid-generator.netlify.app](https://cssgrid-generator.netlify.app/)
+
+#### 7. Accordion Slider Generator
+[accordionslider.com](https://accordionslider.com/)
+
+#### 8. CSS clip-path maker
+[bennettfeely.com/clippy](https://bennettfeely.com/clippy/)
+
+#### 9. Get Waves
+[getwaves.io](https://getwaves.io/)
 
 **[⬆ Top](#table-of-contents)**
 
