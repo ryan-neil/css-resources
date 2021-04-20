@@ -222,26 +222,29 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 #### 2. Smooth Shadow generator
 [shadows.brumm.af](https://shadows.brumm.af/)
 
-#### 3. Border Radius Generator
-[fancy-border-radius](https://9elements.github.io/fancy-border-radius/)
-
-#### 4. Easing Gradients
+#### 3. Easing Gradients
 [larsenwork.com/easing-gradients](https://larsenwork.com/easing-gradients/)
 
-#### 5. Data Viz Color Palette Generator
+#### 4. Data Viz Color Palette Generator
 [learnui.design/tools/data-color-picker.html](https://learnui.design/tools/data-color-picker.html)
 
-#### 6. Grid Generator
+#### 5. Grid Generator
 [cssgrid-generator.netlify.app](https://cssgrid-generator.netlify.app/)
 
-#### 7. Accordion Slider Generator
+#### 6. Accordion Slider Generator
 [accordionslider.com](https://accordionslider.com/)
 
-#### 8. CSS clip-path maker
+#### 7. CSS clip-path maker
 [bennettfeely.com/clippy](https://bennettfeely.com/clippy/)
 
-#### 9. Get Waves
+#### 8. Get Waves
 [getwaves.io](https://getwaves.io/)
+
+#### 9. Blob Maker
+[blobmaker.app](https://www.blobmaker.app/)
+
+#### 10. SVG Generator
+[haikei.app](https://app.haikei.app/)
 
 **[⬆ Top](#table-of-contents)**
 
