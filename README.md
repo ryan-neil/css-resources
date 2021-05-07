@@ -246,6 +246,9 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 #### 10. SVG Generator
 [haikei.app](https://app.haikei.app/)
 
+#### 10. Mesh Hero Generator
+[csshero.org](https://csshero.org/mesher/#)
+
 **[⬆ Top](#table-of-contents)**
 
 ---
