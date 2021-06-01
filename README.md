@@ -44,6 +44,7 @@ A quick look at the files and directories you'll see in the repo.
 - [Hero Generator](https://hero-generator.netlify.app/)
 - [CSS Reference Sheet](https://pixllabs.io/blog/web-development/css-cheat-sheet/)
 - [HTML Cheatsheet](https://overapi.com/html)
+- [Semantic HTML](https://www.jungledisk.com/blog/2017/12/04/should-i-bother-with-semantic-html/)
 
 ## 📓 Notes
 ### Table of Contents
@@ -54,6 +55,7 @@ A quick look at the files and directories you'll see in the repo.
   1. [CSS Flexbox](#css-flexbox)
   1. [CSS Grid](#css-grid)
   1. [CSS Variables](#css-variables)
+  1. [CSS Media Queries](#css-media-queries)
   1. [CSS BEM](#css-bem)
   1. [Color](#color)
   1. [Depth](#depth)
@@ -255,7 +257,6 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 
 ### CSS Flexbox
 
-#### Resources:
 * [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 **[⬆ Top](#table-of-contents)**
@@ -264,7 +265,6 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 
 ### CSS Grid
 
-#### Resources:
 * [CSS Tricks Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
 * [Guide to CSS Grid](https://dev.to/joyshaheb/)
@@ -276,8 +276,6 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 ---
 
 ### CSS Variables
-
-#### Resources:
 
 The `var()` function is used to insert the value of a CSS variable. CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
 
@@ -332,6 +330,15 @@ function setVariableValue() {
 	root.style.setProperty('--white', 'gray');
 }
 ```
+
+**[⬆ Top](#table-of-contents)**
+
+---
+
+### CSS Media Queries
+
+* [FCC - Media Queries](https://www.freecodecamp.org/news/how-to-use-css-media-queries-to-create-responsive-websites/)
+
 
 **[⬆ Top](#table-of-contents)**
 
@@ -392,6 +399,7 @@ This is because a great deal of front end development is not just about the nice
 #### Resources:
 * [Colorinspo](https://colorsinspo.com/)
 * [HTML Color Codes](https://htmlcolorcodes.com/)
+* [Color Hex](https://www.color-hex.com/)
 * [CSS Gradient Generator](https://cssgradient.io/)
 * [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
 * [Happy Hues](https://www.happyhues.co/)
