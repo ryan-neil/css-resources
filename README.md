@@ -397,16 +397,16 @@ This is because a great deal of front end development is not just about the nice
 ### Color
 
 #### Resources:
-* [Colorinspo](https://colorsinspo.com/)
-* [HTML Color Codes](https://htmlcolorcodes.com/)
-* [Color Hex](https://www.color-hex.com/)
-* [CSS Gradient Generator](https://cssgradient.io/)
+* [Colorinspo - An all in one resource to find everything about colors, inspiration, Color Tools, Gradients and thousands of trendy hand-picked color palettes.](https://colorsinspo.com/)
+* [HTML Color Codes - Get HTML color codes, Hex color codes, RGB and HSL values.](https://htmlcolorcodes.com/)
+* [CSS Gradient Generator - What the name says.](https://cssgradient.io/)
+* [Color Hunt - Color Palettes for Designers and Artists](https://colorhunt.co/)
 * [CoolHue - Gradient Colors](https://webkul.github.io/coolhue/)
-* [Happy Hues](https://www.happyhues.co/)
-* [ColorSpace](https://mycolor.space/)
-* [Shopify Color](https://polaris.shopify.com/design/colors#navigation)
-* [IBM Color](https://www.ibm.com/design/language/color)
-* [TailwindCSS Colors](https://tailwindcss.com/docs/customizing-colors)
+* [Happy Hues - See color palette inspiration on a real example website.](https://www.happyhues.co/)
+* [ColorSpace - Find a matching color scheme or generate nice color palettes and color gradients.](https://mycolor.space/)
+* [Shopify Color - Color standards](https://polaris.shopify.com/design/colors#navigation)
+* [IBM Color - Color standards](https://www.ibm.com/design/language/color)
+* [TailwindCSS Colors - Color standards](https://tailwindcss.com/docs/customizing-colors)
 
 Companies:
 ```css
@@ -578,6 +578,7 @@ Usage:
 #### Resources:
 * [Google Icons](https://fonts.google.com/icons)
 * [Flat Icon](https://www.flaticon.com/)
+* [Icons8](https://icons8.com/)
 
 #### Google Icons:
 Icon fonts are fonts that contain symbols and glyphs instead of letters or numbers. A major advantage of icon fonts is they scale very nicely; they increase in size with much better quality than raster images. Also, since a font icon is text, CSS can easily be applied to adjust the size and change the color.
