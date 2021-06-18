@@ -15,24 +15,17 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 A quick look at the files and directories you'll see in the repo.
 
 ```bash
-  .
-  ├── src
-    ├── assets
-      ├── repo image files
-    └── css
-      ├── box-shadow
-      ├── cards
-      ├── colors
-      ├── css-flex
-      ├── css-grid
-      ├── fonts
-      ├── icons
-      └── layout
+├─ src
+│ ├─ assets
+│ └─ css
+│   ├─ buttons
+│   ├─ layout
+│   ├─ nav
+│   └─ toggle
+└─ README.md
 ```
 
-1. **`/src`**: This directory contains all of the source files for the Github repo. \
-    1. **`/assets`**: This directory contains images for the repo. \
-    1. **`/css`**: This directory contains all css component files.
+----
 
 ## 🔗 Resources
 - [Google Material Design](https://material.io/)
@@ -45,6 +38,8 @@ A quick look at the files and directories you'll see in the repo.
 - [CSS Reference Sheet](https://pixllabs.io/blog/web-development/css-cheat-sheet/)
 - [HTML Cheatsheet](https://overapi.com/html)
 - [Semantic HTML](https://www.jungledisk.com/blog/2017/12/04/should-i-bother-with-semantic-html/)
+
+----
 
 ## 📓 Notes
 ### Table of Contents
