@@ -11,7 +11,7 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 ###### If you found this guide helpful give me a follow and let me know! 🤙🏻
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/home?lang=en)
 
-## 🧐 What's inside?
+### 🧐 What's inside?
 A quick look at the files and directories you'll see in the repo.
 
 ```bash
@@ -25,9 +25,7 @@ A quick look at the files and directories you'll see in the repo.
 └─ README.md
 ```
 
-----
-
-## 🔗 Resources
+### 🔗 Resources
 - [Google Material Design](https://material.io/)
 - [IBM Design Language](https://www.ibm.com/design/language/)
 - [PurgeCSS](https://purgecss.com/#sponsors-%F0%9F%A5%B0)
@@ -41,17 +39,17 @@ A quick look at the files and directories you'll see in the repo.
 
 ----
 
-## 📓 Notes
+### 📓 Notes
 ### Table of Contents
 
   1. [HTML](#quick-html-tips)
   1. [Centering a Div](#centering-a-div)
-  1. [CSS Generators](#css-generators)
-  1. [CSS Flexbox](#css-flexbox)
-  1. [CSS Grid](#css-grid)
-  1. [CSS Variables](#css-variables)
-  1. [CSS Media Queries](#css-media-queries)
-  1. [CSS BEM](#css-bem)
+  1. [Generators](#generators)
+  1. [Flexbox](#flexbox)
+  1. [Grid](#grid)
+  1. [Variables](#variables)
+  1. [Media Queries](#media-queries)
+  1. [BEM](#bem)
   1. [Color](#color)
   1. [Depth](#depth)
   1. [Fonts](#fonts)
@@ -132,7 +130,7 @@ We should get this end result:
   <img src="/src/assets/css-center-div-02.png" width="300" alt="css-center-div">
 </p>
 
-### Flexbox:
+### Centering with Flexbox:
 ```css
 .outer-div {
   display: flex;
@@ -152,7 +150,7 @@ OR
 }
 ```
 
-### Grid:
+### Centering with Grid:
 ```css
 .outer-div {
   display: grid;
@@ -210,7 +208,7 @@ OR
 
 ---
 
-### CSS Generators
+### Generators
 Generators allow you to cut back on time consuming tasks. Here's a collection of some of my most used generators.
 
 #### 1. Neumorphism/Soft UI generator
@@ -250,7 +248,7 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 
 ---
 
-### CSS Flexbox
+### Flexbox
 
 * [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -258,7 +256,7 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 
 ---
 
-### CSS Grid
+### Grid
 
 * [CSS Tricks Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
@@ -270,7 +268,7 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 
 ---
 
-### CSS Variables
+### Variables
 
 The `var()` function is used to insert the value of a CSS variable. CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
 
@@ -330,7 +328,7 @@ function setVariableValue() {
 
 ---
 
-### CSS Media Queries
+### Media Queries
 
 * [FCC - Media Queries](https://www.freecodecamp.org/news/how-to-use-css-media-queries-to-create-responsive-websites/)
 
@@ -339,7 +337,7 @@ function setVariableValue() {
 
 ---
 
-### CSS BEM
+### BEM
 The __Block__, __Element__, __Modifier__ methodology (commonly referred to as __BEM__) is a popular naming convention for classes in HTML and CSS. Its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
 
 Here's an example of what writing in the BEM style might look like:
