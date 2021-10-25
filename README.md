@@ -569,6 +569,7 @@ Usage:
 ### Icons
 
 #### Resources:
+* [700+ CSS Icons (with svg code)](https://css.gg/)
 * [Google Icons](https://fonts.google.com/icons)
 * [Flat Icon](https://www.flaticon.com/)
 * [Icons8](https://icons8.com/)

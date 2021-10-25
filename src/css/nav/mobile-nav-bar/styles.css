@@ -1,0 +1,127 @@
+:root {
+	--coral: #ff585d;
+	--orange: #e66000;
+	--yellow: #ffcb00;
+	--red: #db4437;
+	--blue: #4285f4;
+	--green: #34a853;
+	--light-blue: #00d8ff;
+	--purple: #6762a6;
+	--pink: #ff00bf;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Ubuntu, -apple-system, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+/* container */
+.nav-container {
+	height: auto;
+	min-height: 50px;
+	padding: 1rem 1rem 1.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132), 0 .3px .9px 0 rgba(0, 0, 0, .108);
+}
+/* logo */
+.nav-logo {
+	cursor: pointer;
+}
+/* links */
+.nav-links-container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.nav-links__wrapper {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+}
+.nav-link {
+	position: relative; /* for under bar hover effect */
+	color: #1f1f1f;
+	cursor: pointer;
+}
+.nav-link:hover {
+	color: var(--blue);
+}
+/* links under bar */
+.nav-link::before {
+	transition: 300ms;
+	height: 2px;
+	content: "";
+	position: absolute;
+	background-color: var(--blue);
+}
+.fade-up::before {
+	width: 100%;
+	bottom: 1px;
+	opacity: 0;
+}
+.fade-up:hover::before {
+	bottom: -3px;
+	opacity: 1;
+}
+/* contact button */
+.nav-cnt-btn a {
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 0.35rem 0.85rem;
+	border-radius: 5px;
+}
+.nav-cnt-btn:hover {
+	opacity: 0.9;
+	transition: 0.15s ease-in-out;
+}
+/* hamburger */
+.nav-ham-btn {
+	display: none;
+}
+/* Mobile */
+@media screen and (max-width: 45em) {
+	.nav-ham-btn {
+		display: block;
+		cursor: pointer;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+	/* container */
+	.nav-container {
+		flex-direction: column;
+	}
+	.nav-links-container {
+		flex-direction: column;
+		margin-top: 2rem;
+		display: none;
+	}
+	.spacer {
+		width: 8rem;
+		border-bottom: 1px solid rgb(223, 223, 223);
+	}
+	.nav-links__wrapper {
+		flex-direction: column;
+		text-align: center;
+		gap: 1.5rem;
+	}
+	.nav-logo {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+	}
+	.show {
+		display: flex;
+	}
+}
