@@ -11,20 +11,6 @@ This guide is not intended to teach you the fundamentals of CSS but merely a ref
 ###### If you found this guide helpful give me a follow and let me know! 🤙🏻
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/home?lang=en)
 
-### 🧐 What's inside?
-A quick look at the files and directories you'll see in the repo.
-
-```bash
-├─ src
-│ ├─ assets
-│ └─ css
-│   ├─ buttons
-│   ├─ layout
-│   ├─ nav
-│   └─ toggle
-└─ README.md
-```
-
 ### 🔗 Resources
 - [Google Material Design](https://material.io/)
 - [IBM Design Language](https://www.ibm.com/design/language/)
@@ -32,16 +18,11 @@ A quick look at the files and directories you'll see in the repo.
 - [Undesign - Design Tools](https://undesign.learn.uno/)
 - [CSS -> JavaScript](https://css2js.dotenv.dev/)
 - [Responsively](https://responsively.app/)
-- [Hero Generator](https://hero-generator.netlify.app/)
 - [CSS Reference Sheet](https://pixllabs.io/blog/web-development/css-cheat-sheet/)
 - [HTML Cheatsheet](https://overapi.com/html)
 - [Semantic HTML](https://www.jungledisk.com/blog/2017/12/04/should-i-bother-with-semantic-html/)
 
-----
-
-### 📓 Notes
 ### Table of Contents
-
   1. [HTML](#quick-html-tips)
   1. [Centering a Div](#centering-a-div)
   1. [Generators](#generators)
@@ -55,9 +36,7 @@ A quick look at the files and directories you'll see in the repo.
   1. [Fonts](#fonts)
   1. [Icons](#icons)
 
----
-
-### Quick HTML Tips
+# Quick HTML Tips
 
 ### Tags
 When it comes to HTML tags, some general guidelines to follow are:
@@ -91,9 +70,7 @@ If we needed to go up two directories, the file path would start like this: "`..
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### Centering a Div
+# Centering a Div
 Yes, the dreaded centering in CSS... There are many ways to achieve this but luckily __Flex__ and __Grid__ have made our lives much easier.
 
 For each example we will be using the following HTML:
@@ -206,9 +183,7 @@ OR
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### Generators
+# Generators
 Generators allow you to cut back on time consuming tasks. Here's a collection of some of my most used generators.
 
 #### 1. Neumorphism/Soft UI generator
@@ -241,22 +216,21 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 #### 10. SVG Generator
 [haikei.app](https://app.haikei.app/)
 
+#### 11. Hero Generator
+[hero-generator.netlify](https://hero-generator.netlify.app/)
+
 #### 10. Mesh Hero Generator
 [csshero.org](https://csshero.org/mesher/#)
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### Flexbox
+# Flexbox
 
 * [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### Grid
+# Grid
 
 * [CSS Tricks Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
@@ -266,9 +240,7 @@ Generators allow you to cut back on time consuming tasks. Here's a collection of
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### Variables
+# Variables
 
 The `var()` function is used to insert the value of a CSS variable. CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
 
@@ -326,19 +298,22 @@ function setVariableValue() {
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### Media Queries
+# Media Queries
 
 * [FCC - Media Queries](https://www.freecodecamp.org/news/how-to-use-css-media-queries-to-create-responsive-websites/)
 
 
 **[⬆ Top](#table-of-contents)**
 
----
-
-### BEM
+# BEM
 The __Block__, __Element__, __Modifier__ methodology (commonly referred to as __BEM__) is a popular naming convention for classes in HTML and CSS. Its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
+
+```css
+.block__element--modifier
+```
+
+### Resources:
+  * [Battling BEM CSS: 10 Common Problems And How To Avoid Them](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/)
 
 Here's an example of what writing in the BEM style might look like:
 ```css
@@ -349,20 +324,22 @@ Here's an example of what writing in the BEM style might look like:
 .btn__primary {}
 
 /* Modifier that changes the style of the block */
-.btn--blue {} 
-.btn--small {}
+.btn__primary--blue {} 
+.btn__primary--small {}
 ```
-In this CSS methodology a __block__ is a top-level abstraction of a new component, for example a button: `.btn { }`. This block should be thought of as a parent. 
+In this CSS methodology a __block__ is a top-level abstraction of a new component, for example a button: `.btn {}`. This block should be thought of as a parent. 
 
-Child items, or __elements__, can be placed inside and these are denoted by two underscores following the name of the block like `.btn__primary { }`. 
+Child items, or __elements__, can be placed inside and these are denoted by two underscores following the name of the block like `.btn__primary {}`. 
 
-Finally, __modifiers__ can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like `.btn--orange`.
+Finally, __modifiers__ can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like `.btn__primary--blue`.
 
 The HTML markup might then look like this:
 ```html
-<a class="btn btn--small btn--blue" href="https://josephskycrest.com">
-  <span class="btn__primary">Submit</span>
-  <span class="btn__secondary">Cancel</span>
+<a class="btn" href="">
+  <button class="btn__primary--blue">Submit</button>
+</a>
+<a class="btn" href="">
+  <button class="btn__secondary--red">Cancel</button>
 </a>
 ```
 #### So why should we consider using BEM?
@@ -387,9 +364,9 @@ This is because a great deal of front end development is not just about the nice
 
 ---
 
-### Color
+# Color
 
-#### Resources:
+### Resources:
 * [Colorinspo - An all in one resource to find everything about colors, inspiration, Color Tools, Gradients and thousands of trendy hand-picked color palettes.](https://colorsinspo.com/)
 * [HTML Color Codes - Get HTML color codes, Hex color codes, RGB and HSL values.](https://htmlcolorcodes.com/)
 * [CSS Gradient Generator - What the name says.](https://cssgradient.io/)
@@ -451,7 +428,7 @@ Neon:
 }
 ```
 
-#### RGB:
+### RGB:
 RGB numbers are based upon monitor settings of red, green, and blue light. By changing the RGB numbers, you’re telling your monitor how much of that particular light color you want to shine.
 
 RGB defines the values of red (the first number), green (the second number), or blue (the third number). The number 0 signifies no representation of the color and 255 signifies the highest possible concentration of the color.
@@ -460,7 +437,7 @@ RGB defines the values of red (the first number), green (the second number), or 
 
 In the above example, you get the brightest red possible without any green or blue presented. If you wanted only green, you’d use `RGB(0, 255, 0)` and for blue, `RGB(0, 0, 255)`.
 
-#### Hexadecimal (Hex):
+### Hexadecimal (Hex):
 We use hexadecimal numbers because it’s a human-friendly representation of values in binary code. Hex color codes start with a pound sign or hashtag (#) and are followed by six letters and/or numbers. 
 
 The first two letters/numbers refer to _red_, the next two refer to _green_, and the last two refer to _blue_. The color values are defined in values between 00 and FF (instead of from 0 to 255 in RGB).
@@ -489,17 +466,28 @@ Working with letters is the same concept. For example, FF = 255 because you mult
 
 ---
 
-### Depth
+# Depth
 
-#### Resources:
+### Resources:
 * [Microsoft Depth](https://developer.microsoft.com/en-us/fluentui#/styles/web/elevation)
 * [Generate Box Shadows](https://shadows.brumm.af/)
 
 Depth (also referred to as elevation) is used to draw focus to an experience and add a physical materiality to the app. Shallow levels are reserved for items that are closely connected to the canvas or view, such as tiles. Deeper levels create a prominent frame around the surface, drawing strong focus to self-contained experiences like dialogs.
 
+Template:
+```css
+:root {
+  /* box shadows */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+```
+
 The following examples are based on Microsoft's UI elevation chart:
 
-#### Depth Level 4:
+### Depth Level 4:
 Usage:
 * Cards
 * Grid item thumbnails
@@ -514,7 +502,7 @@ Usage:
   <img src="/src/assets/card-depth-4.png" width="260" alt="depth-4-card">
 </p>
 
-#### Depth Level 8:
+### Depth Level 8:
 Usage:
 * Command bars
 * Command dropdowns
@@ -530,7 +518,7 @@ Usage:
   <img src="/src/assets/card-depth-8.png" width="265" alt="depth-8-card">
 </p>
 
-#### Depth Level 16:
+### Depth Level 16:
 Usage:
 * Teaching callouts
 * Search results dropdown
@@ -547,7 +535,7 @@ Usage:
   <img src="/src/assets/card-depth-16.png" width="270" alt="depth-16-card">
 </p>
 
-#### Depth Level 64:
+### Depth Level 64:
 Usage:
 * Panels
 * Pop up dialogs
@@ -566,15 +554,15 @@ Usage:
 
 ---
 
-### Icons
+# Icons
 
-#### Resources:
+### Resources:
 * [700+ CSS Icons (with svg code)](https://css.gg/)
 * [Google Icons](https://fonts.google.com/icons)
 * [Flat Icon](https://www.flaticon.com/)
 * [Icons8](https://icons8.com/)
 
-#### Google Icons:
+### Google Icons:
 Icon fonts are fonts that contain symbols and glyphs instead of letters or numbers. A major advantage of icon fonts is they scale very nicely; they increase in size with much better quality than raster images. Also, since a font icon is text, CSS can easily be applied to adjust the size and change the color.
 
 To use Google Icon Fonts, add the following line inside the `<head>` section of your HTML file:
@@ -605,15 +593,15 @@ Output:
 
 ---
 
-### Fonts
+# Fonts
 
-#### Resources:
+### Resources:
 * [Google Fonts](https://fonts.google.com/)
 * [Font Pairing](https://fontjoy.com/)
 * [Font Sizing - Type Scale](https://type-scale.com/)
 
 
-#### Google Fonts
+### Google Fonts
 Google Fonts is a library of more than a thousand free and open source font families and APIs for conveniently using the fonts via CSS.
 
 To add Google Fonts to our project, add a special style sheet link to the `<head>` section. Here's an example using my current favorite font, Quicksand:
@@ -632,7 +620,7 @@ html {
 
 **[⬆ Top](#table-of-contents)**
 
----
+<br>
 
-### Contributing
+# Contributing
 Contributions are always welcome! All I ask is that you open an issue and we discuss your proposed changes before you create a pull request.
